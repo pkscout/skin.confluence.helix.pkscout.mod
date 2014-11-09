@@ -13,6 +13,7 @@
 	<include file="IncludesHomeRecentlyAdded.xml"/>
 	<include file="IncludesHomeRecentlyAddedContent.xml" />
 	<include file="IncludesHomeMenuItems.xml"/>
+	<include file="IncludesHomeMenuItemsLiveTVSubMenu.xml" />
 	<include file="IncludesPVR.xml"/>
 	<include file="IncludesBackgroundBuilding.xml"/>
 

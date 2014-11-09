@@ -257,27 +257,21 @@
 			<label>19019</label>
 			<onclick>ActivateWindow(TVChannels)</onclick>
 		</control>
-		<control type="button" id="90144">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>19069</label>
-			<onclick>ActivateWindow(TVGuide)</onclick>
-		</control>
-		<control type="button" id="90145">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>19163</label>
-			<onclick>ActivateWindow(TVRecordings)</onclick>
-		</control>
-		<control type="button" id="90146">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>19040</label>
-			<onclick>ActivateWindow(TVTimers)</onclick>
-		</control>
-		<control type="button" id="90147">
+		<include condition="!System.HasAddon(script.xbmc.x-newa) | !Skin.HasSetting(UseNEWAEPG)">StandardEPG</include>
+		<include condition="System.HasAddon(script.xbmc.x-newa) + Skin.HasSetting(UseNEWAEPG)">XNEWAEPG</include>
+		<include condition="!Skin.HasSetting(HomeMenuNoRecordings) + [!System.HasAddon(script.xbmc.x-newa) | !Skin.HasSetting(UseNEWARecordings)]">StandardRecordings</include>
+		<include condition="!Skin.HasSetting(HomeMenuNoRecordings) + System.HasAddon(script.xbmc.x-newa) + Skin.HasSetting(UseNEWARecordings)">XNEWARecordings</include>
+		<include condition="System.HasAddon(script.xbmc.x-newa) + Skin.HasSetting(UseNEWADashboard)">XNEWADashboard</include>
+		<include condition="System.HasAddon(script.xbmc.x-newa) + Skin.HasSetting(UseNEWAWebClient)">XNEWAWebClient</include>
+		<include condition="System.HasAddon(script.xbmc.x-newa) + Skin.HasSetting(UseNEWASchedules)">XNEWASchedules</include>
+		<include condition="!System.HasAddon(script.xbmc.x-newa) | !Skin.HasSetting(UseNEWATimer)">StandardTimer</include>
+		<include condition="System.HasAddon(script.xbmc.x-newa) + Skin.HasSetting(UseNEWATimer)">XNEWATimer</include>
+		<control type="button" id="90150">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>137</label>
 			<onclick>ActivateWindow(TVSearch)</onclick>
 		</control>
-		<control type="image" id="90148">
+		<control type="image" id="90151">
 			<width>35</width>
 			<height>35</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
