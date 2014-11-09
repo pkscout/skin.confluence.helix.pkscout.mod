@@ -11,6 +11,7 @@
 	<include file="ViewsWeather.xml"/>
 	<include file="IncludesCodecFlagging.xml"/>
 	<include file="IncludesHomeRecentlyAdded.xml"/>
+	<include file="IncludesHomeRecentlyAddedContent.xml" />
 	<include file="IncludesHomeMenuItems.xml"/>
 	<include file="IncludesPVR.xml"/>
 	<include file="IncludesBackgroundBuilding.xml"/>
