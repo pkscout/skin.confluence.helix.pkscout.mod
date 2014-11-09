@@ -184,6 +184,12 @@
 						<label2>31200</label2>
 						<onclick>noop</onclick>
 					</item>
+					<item id="5">
+						<label>$ADDON[script.module.cmpl 30004]</label>
+						<label2>31112</label2>
+						<onclick>noop</onclick>
+						<visible>System.HasAddon(script.xbmc.x-newa)</visible>
+					</item>
 				</content>
 			</control>
 			<control type="image">
@@ -423,6 +429,19 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>!IsEmpty(Weather.Plugin)</visible>
 					</control>
+					<control type="radiobutton" id="211">
+						<description>show music disc number</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$ADDON[script.module.cmpl 30013]</label>
+						<onclick>Skin.ToggleSetting(HomepageShowMusicDiscNumber)</onclick>
+						<selected>Skin.HasSetting(HomepageShowMusicDiscNumber)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
 					<control type="radiobutton" id="205">
 						<description>Show Recently added Video info</description>
 						<width>750</width>
@@ -436,6 +455,48 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+					<control type="radiobutton" id="210">
+						<description>Show season/episode numbers</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>   $ADDON[script.module.cmpl 30012]</label>
+						<onclick>Skin.ToggleSetting(HomepageShowSeasonEpisodes)</onclick>
+						<selected>Skin.HasSetting(HomepageShowSeasonEpisodes)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>!Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>
+					</control>
+					<control type="radiobutton" id="207">
+						<description>Show Random Movie info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>   $ADDON[script.module.cmpl 30000]</label>
+						<onclick>Skin.ToggleSetting(HomepageShowRandomMovies)</onclick>
+						<selected>Skin.HasSetting(HomepageShowRandomMovies)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>
+					</control>
+					<control type="radiobutton" id="208">
+						<description>Show Random TV info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>   $ADDON[script.module.cmpl 30001]</label>
+						<onclick>Skin.ToggleSetting(HomepageShowRandomTV)</onclick>
+						<selected>Skin.HasSetting(HomepageShowRandomTV)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>
+					</control>
 					<control type="radiobutton" id="206">
 						<description>Show Recently added info</description>
 						<width>750</width>
@@ -448,6 +509,20 @@
 						<selected>!Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="209">
+						<description>Show Random Albums</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>   $ADDON[script.module.cmpl 30002]</label>
+						<onclick>Skin.ToggleSetting(HomepageShowRandomAlbums)</onclick>
+						<selected>Skin.HasSetting(HomepageShowRandomAlbums)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</visible>
 					</control>
 					<control type="label" id="220">
 						<width>750</width>
@@ -552,6 +627,32 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+					<control type="radiobutton" id="229">
+						<description>Hide Radio Channels (LiveTV)</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31111] - $LOCALIZE[19024] ($LOCALIZE[31502])</label>
+						<onclick>Skin.ToggleSetting(HomeMenuNoRadioChannels)</onclick>
+						<selected>Skin.HasSetting(HomeMenuNoRadioChannels)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="230">
+						<description>Hide Recordings (LiveTV)</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31111] - $LOCALIZE[19163] ($LOCALIZE[31502])</label>
+						<onclick>Skin.ToggleSetting(HomeMenuNoRecordings)</onclick>
+						<selected>Skin.HasSetting(HomeMenuNoRecordings)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1060</left>
@@ -638,6 +739,18 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(ShowBackgroundVis)</onclick>
 						<selected>!Skin.HasSetting(ShowBackgroundVis)</selected>
+					</control>
+					<control type="radiobutton" id="305">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$ADDON[script.module.cmpl 30011]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideArtistSlideshow)</onclick>
+						<selected>!Skin.HasSetting(HideArtistSlideshow)</selected>
 					</control>
 					<control type="label" id="310">
 						<width>750</width>
@@ -1035,6 +1148,109 @@
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(4)</visible>
+				</control>
+				<control type="grouplist" id="9005">
+					<visible>Container(9000).Hasfocus(5)</visible>
+					<left>290</left>
+					<top>60</top>
+					<width>750</width>
+					<height>530</height>
+					<itemgap>-1</itemgap>
+					<pagecontrol>60</pagecontrol>
+					<onleft>9000</onleft>
+					<onright>60</onright>
+					<onup>9002</onup>
+					<ondown>9002</ondown>
+					<control type="label" id="501">
+					    <description>NextPVR Integration Header</description>
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>31106</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="radiobutton" id="511">
+						<description>Use NEWA Recordings</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$ADDON[script.module.cmpl 30005] $LOCALIZE[19163]</label>
+						<onclick>Skin.ToggleSetting(UseNEWARecordings)</onclick>
+						<selected>Skin.HasSetting(UseNEWARecordings)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>!Skin.HasSetting(HomeMenuNoRecordings)</visible>
+					</control>
+					<control type="radiobutton" id="512">
+						<description>Use NEWA EPG</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$ADDON[script.module.cmpl 30005] $LOCALIZE[19069]</label>
+						<onclick>Skin.ToggleSetting(UseNEWAEPG)</onclick>
+						<selected>Skin.HasSetting(UseNEWAEPG)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="513">
+						<description>Use NEWA Timers</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$ADDON[script.module.cmpl 30005] $LOCALIZE[19040]</label>
+						<onclick>Skin.ToggleSetting(UseNEWATimer)</onclick>
+						<selected>Skin.HasSetting(UseNEWATimer)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="514">
+						<description>Show NEWA Recurring Schedules</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$ADDON[script.module.cmpl 30006] $ADDON[script.module.cmpl 30009] $LOCALIZE[19163]</label>
+						<onclick>Skin.ToggleSetting(UseNEWASchedules)</onclick>
+						<selected>Skin.HasSetting(UseNEWASchedules)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="515">
+						<description>Show NEWA Web Client</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$ADDON[script.module.cmpl 30006] $ADDON[script.module.cmpl 30007]</label>
+						<onclick>Skin.ToggleSetting(UseNEWAWebClient)</onclick>
+						<selected>Skin.HasSetting(UseNEWAWebClient)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="516">
+						<description>Show NEWA Dashboard</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$ADDON[script.module.cmpl 30006] $ADDON[script.module.cmpl 30010]</label>
+						<onclick>Skin.ToggleSetting(UseNEWADashboard)</onclick>
+						<selected>Skin.HasSetting(UseNEWADashboard)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
 				</control>
 			</control>
 		</control>
