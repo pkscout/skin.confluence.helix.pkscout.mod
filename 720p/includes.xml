@@ -438,7 +438,6 @@
 			<shadowcolor>black</shadowcolor>
 			<visible>!Skin.HasSetting(HomepageShowMusicDiscNumber)</visible>
 		</control>
-		</control>
 		<control type="label">
 			<description>Time Label</description>
 			<left>160</left>
