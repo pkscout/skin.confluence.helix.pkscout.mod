@@ -17,15 +17,14 @@
 		</control>
 		<control type="image">
 			<description>LOGO</description>
-			<left>10</left>
-			<top>10</top>
+			<left>1170</left>
+			<top>660</top>
 			<width>100</width>
 			<height>50</height>
 			<aspectratio aligny="top" align="left">keep</aspectratio>
 			<texture>kodi-logo.png</texture>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
-			<visible>!Skin.HasSetting(homepageWeatherinfo)</visible>
 		</control>
 		<!-- Music Info -->
 		<control type="group">
@@ -1066,10 +1065,10 @@
 			<include>Window_OpenClose_Animation</include>
 			<control type="rss">
 				<description>RSS feed</description>
-				<left>100</left>
+				<left>125</left>
 				<top>0</top>
 				<height>30</height>
-				<width>1145</width>
+				<width>1015</width>
 				<font>font12</font>
 				<urlset>1</urlset>
 				<textcolor>blue</textcolor>
@@ -1078,7 +1077,7 @@
 			</control>
 			<control type="image">
 				<description>RSS background</description>
-				<left>1250</left>
+				<left>1145</left>
 				<top>2</top>
 				<width>24</width>
 				<height>24</height>
