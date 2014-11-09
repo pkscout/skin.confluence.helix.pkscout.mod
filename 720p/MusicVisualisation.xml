@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+	<onload condition="System.HasAddon(script.artistslideshow) + !Skin.HasSetting(HideArtistSlideshow)">RunScript(script.artistslideshow)</onload>
 	<defaultcontrol>-</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
@@ -21,6 +22,18 @@
 			<colordiffuse>AAFFFFFF</colordiffuse>
 			<visible>!IsEmpty(Player.Art(fanart)) + !Skin.HasSetting(HideVisualizationFanart)</visible>
 			<fadetime>600</fadetime>
+		</control>
+		<control type="multiimage">
+		    <posx>0</posx>
+		    <posy>0</posy>
+		    <width>1280</width>
+		    <height>720</height>
+		    <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+		    <aspectratio>keep</aspectratio>
+		    <timeperimage>10000</timeperimage>
+		    <fadetime>2000</fadetime>
+		    <randomize>true</randomize>
+		    <visible>System.HasAddon(script.artistslideshow) + !Skin.HasSetting(HideArtistSlideshow)</visible>
 		</control>
 		<!-- media infos -->
 		<control type="group">
@@ -48,7 +61,7 @@
 				<visible>MusicPartyMode.Enabled</visible>
 			</control>
 			<control type="label">
-				<description>Normal Header label</description>
+				<description>Playlist Count Centered</description>
 				<left>0</left>
 				<top>5</top>
 				<width>1280</width>
@@ -59,7 +72,21 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>$INFO[musicplayer.Playlistposition,$LOCALIZE[554]: ]$INFO[musicplayer.Playlistlength, / ]</label>
-				<visible>!MusicPartyMode.Enabled</visible>
+				<visible>Skin.HasSetting(homepageWeatherinfo) + !IsEmpty(Weather.Plugin) + !MusicPartyMode.Enabled</visible>
+			</control>
+			<control type="label">
+				<description>Playlist Count Left Side</description>
+				<left>20</left>
+				<top>5</top>
+				<width>300</width>
+				<height>25</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$INFO[musicplayer.Playlistposition,$LOCALIZE[554]: ]$INFO[musicplayer.Playlistlength, / ]</label>
+				<visible>![Skin.HasSetting(homepageWeatherinfo) + !IsEmpty(Weather.Plugin)] + !MusicPartyMode.Enabled</visible>
 			</control>
 			<include>Clock</include>
 			<include>Weather Summary</include>
