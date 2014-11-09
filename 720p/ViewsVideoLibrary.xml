@@ -1667,6 +1667,33 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
+						<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(Seasons)</visible>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<top>0</top>
+						<width>250</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>Container.Content(TVShows)</visible>
+					</control>
+					<control type="label">
+						<left>255</left>
+						<top>0</top>
+						<width>85</width>
+						<height>40</height>
+						<font>font10</font>
+						<textcolor>grey2</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label2]</label>
+						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="image">
 						<left>320</left>
@@ -1711,11 +1738,38 @@
 						<width>310</width>
 						<height>40</height>
 						<font>font13</font>
-						<textcolor>white</textcolor>
+						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
+						<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(Seasons)</visible>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<top>0</top>
+						<width>250</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>Container.Content(TVShows)</visible>
+					</control>
+					<control type="label">
+						<left>255</left>
+						<top>0</top>
+						<width>85</width>
+						<height>40</height>
+						<font>font10</font>
+						<textcolor>grey2</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label2]</label>
+						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="image">
 						<left>320</left>
