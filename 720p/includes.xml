@@ -422,6 +422,22 @@
 			<font>font12</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
+			<visible>Skin.HasSetting(HomepageShowMusicDiscNumber)</visible>
+		</control>
+		<control type="label">
+			<description>Album Label</description>
+			<left>160</left>
+			<top>70</top>
+			<height>30</height>
+			<width>325</width>
+			<label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Album]</label>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font12</font>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<visible>!Skin.HasSetting(HomepageShowMusicDiscNumber)</visible>
+		</control>
 		</control>
 		<control type="label">
 			<description>Time Label</description>
