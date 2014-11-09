@@ -35,11 +35,11 @@
 			</control>
 			<control type="label">
 				<description>Partymode Header label</description>
-				<left>30</left>
+				<left>0</left>
 				<top>5</top>
-				<width>800</width>
+				<width>1280</width>
 				<height>25</height>
-				<align>left</align>
+				<align>center</align>
 				<aligny>center</aligny>
 				<font>font13</font>
 				<textcolor>white</textcolor>
@@ -49,11 +49,11 @@
 			</control>
 			<control type="label">
 				<description>Normal Header label</description>
-				<left>30</left>
+				<left>0</left>
 				<top>5</top>
-				<width>800</width>
+				<width>1280</width>
 				<height>25</height>
-				<align>left</align>
+				<align>center</align>
 				<aligny>center</aligny>
 				<font>font13</font>
 				<textcolor>white</textcolor>
@@ -61,20 +61,8 @@
 				<label>$INFO[musicplayer.Playlistposition,$LOCALIZE[554]: ]$INFO[musicplayer.Playlistlength, / ]</label>
 				<visible>!MusicPartyMode.Enabled</visible>
 			</control>
-			<control type="label">
-				<description>Clock label</description>
-				<left>450</left>
-				<top>5</top>
-				<width>800</width>
-				<height>25</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font13</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<label>$INFO[System.Time]</label>
-				<animation effect="slide" start="0,0" end="-70,0" time="0" condition="Window.IsVisible(MusicOSD)">conditional</animation>
-			</control>
+			<include>Clock</include>
+			<include>Weather Summary</include>
 			<control type="image">
 				<left>0</left>
 				<top>230r</top>
