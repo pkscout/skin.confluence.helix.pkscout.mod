@@ -55,9 +55,9 @@
 						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
-						<left>5</left>
+						<left>1</left>
 						<top>5</top>
-						<width>40</width>
+						<width>44</width>
 						<height>35</height>
 						<font>font12</font>
 						<align>left</align>
@@ -106,9 +106,9 @@
 						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
-						<left>5</left>
+						<left>1</left>
 						<top>5</top>
-						<width>40</width>
+						<width>44</width>
 						<height>35</height>
 						<font>font12</font>
 						<align>left</align>
