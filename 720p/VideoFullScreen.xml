@@ -29,11 +29,11 @@
 			</control>
 			<control type="label" id="1">
 				<description>Channel Group label</description>
-				<left>30</left>
+				<left>0</left>
 				<top>5</top>
-				<width>1000</width>
+				<width>1280</width>
 				<height>25</height>
-				<align>left</align>
+				<align>center</align>
 				<aligny>center</aligny>
 				<font>font13</font>
 				<textcolor>white</textcolor>
