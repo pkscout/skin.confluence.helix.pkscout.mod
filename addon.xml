@@ -5,7 +5,7 @@
   name="Confluence Helix Mods by pkscout"
   provider-name="pkscout|Jezz_X (Original), Team Kodi (Original)">
   <requires>
-    <import addon="xbmc.gui" version="5.0.0"/>
+    <import addon="xbmc.gui" version="5.0.1"/>
     <import addon="script.module.cmpl" version="1.1.0"/>
     <import addon="script.artistslideshow" version="1.8.0"/>
     <import addon="service.skin.widgets" version="0.0.29"/>
