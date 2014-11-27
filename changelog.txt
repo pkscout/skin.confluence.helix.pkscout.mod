@@ -16,5 +16,9 @@ FEATURES
 - option to show/hide music disc numbers on home screen/music visualization (hidden by default)
 
 
+v.2.0.3
+- updated XML files based on Confluence skin in Kodi beta5
+- updated Revamp theme to 2.3.0
+
 v.2.0.2
 - initial conversion for Helix
