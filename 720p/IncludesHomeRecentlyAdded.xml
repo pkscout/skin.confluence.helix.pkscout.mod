@@ -387,7 +387,7 @@
 								<selectedcolor>selected</selectedcolor>
 								<align>center</align>
 								<aligny>center</aligny>
-								<label>$INFO[ListItem.TVshowTitle] - $INFO[ListItem.EpisodeNo]</label>
+								<label>$INFO[ListItem.TVshowTitle] - $INFO[ListItem.Property(episodeno)]</label>
 							</control>
 							<control type="label">
 								<left>20</left>
@@ -493,7 +493,7 @@
 									<selectedcolor>selected</selectedcolor>
 									<align>center</align>
 									<aligny>center</aligny>
-									<label>$INFO[ListItem.TVshowTitle] - $INFO[ListItem.EpisodeNo]</label>
+									<label>$INFO[ListItem.TVshowTitle] - $INFO[ListItem.Property(episodeno)]</label>
 								</control>
 								<control type="label">
 									<visible>!Skin.HasSetting(HomepageShowSeasonEpisodes)</visible>
@@ -537,7 +537,7 @@
 									<selectedcolor>selected</selectedcolor>
 									<align>center</align>
 									<aligny>center</aligny>
-									<label>$INFO[ListItem.TVshowTitle] - $INFO[ListItem.EpisodeNo]</label>
+									<label>$INFO[ListItem.TVshowTitle] - $INFO[ListItem.Property(episodeno)]</label>
 								</control>
 								<control type="label">
 									<visible>!Skin.HasSetting(HomepageShowSeasonEpisodes)</visible>
