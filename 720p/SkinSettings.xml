@@ -481,7 +481,7 @@
 						<selected>Skin.HasSetting(HomepageShowRandomMovies)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>
+						<visible>System.HasAddon(service.library.data.provider) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>
 					</control>
 					<control type="radiobutton" id="208">
 						<description>Show Random TV info</description>
@@ -495,7 +495,7 @@
 						<selected>Skin.HasSetting(HomepageShowRandomTV)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>
+						<visible>System.HasAddon(service.library.data.provider) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>
 					</control>
 					<control type="radiobutton" id="206">
 						<description>Show Recently added info</description>
@@ -522,7 +522,7 @@
 						<selected>Skin.HasSetting(HomepageShowRandomAlbums)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</visible>
+						<visible>System.HasAddon(service.library.data.provider) + !Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</visible>
 					</control>
 					<control type="label" id="220">
 						<width>750</width>
