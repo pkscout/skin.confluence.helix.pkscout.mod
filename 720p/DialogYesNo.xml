@@ -66,6 +66,18 @@
 		</control>
 		<control type="button" id="11">
 			<description>Yes button</description>
+			<onclick condition="StringCompare(Control.GetLabel(1),$LOCALIZE[20362])|StringCompare(Control.GetLabel(1),$LOCALIZE[20363])">ClearProperty(recommendedepisodes-data,10000)</onclick>
+			<onclick condition="StringCompare(Control.GetLabel(1),$LOCALIZE[20362])|StringCompare(Control.GetLabel(1),$LOCALIZE[20363])">ClearProperty(randomepisodes-data,10000)</onclick>
+			<onclick condition="StringCompare(Control.GetLabel(1),$LOCALIZE[20362])|StringCompare(Control.GetLabel(1),$LOCALIZE[20363])">ClearProperty(recentepisodes-data,10000)</onclick>
+			<onclick condition="StringCompare(Control.GetLabel(1),$LOCALIZE[20362])|StringCompare(Control.GetLabel(1),$LOCALIZE[20363])">ClearProperty(recommendedepisodes,10000)</onclick>
+			<onclick condition="StringCompare(Control.GetLabel(1),$LOCALIZE[20362])|StringCompare(Control.GetLabel(1),$LOCALIZE[20363])">ClearProperty(randomepisodes,10000)</onclick>
+			<onclick condition="StringCompare(Control.GetLabel(1),$LOCALIZE[20362])|StringCompare(Control.GetLabel(1),$LOCALIZE[20363])">ClearProperty(recentepisodes,10000)</onclick>
+			<onclick condition="StringCompare(Control.GetLabel(1),$LOCALIZE[432])">ClearProperty(recommendedmovies-data,10000)</onclick>
+			<onclick condition="StringCompare(Control.GetLabel(1),$LOCALIZE[432])">ClearProperty(randommovies-data,10000)</onclick>
+			<onclick condition="StringCompare(Control.GetLabel(1),$LOCALIZE[432])">ClearProperty(recentmovies-data,10000)</onclick>
+			<onclick condition="StringCompare(Control.GetLabel(1),$LOCALIZE[432])">ClearProperty(recommendedmovies,10000)</onclick>
+			<onclick condition="StringCompare(Control.GetLabel(1),$LOCALIZE[432])">ClearProperty(randommovies,10000)</onclick>
+			<onclick condition="StringCompare(Control.GetLabel(1),$LOCALIZE[432])">ClearProperty(recentmovies,10000)</onclick>
 			<left>95</left>
 			<top>175</top>
 			<width>200</width>
