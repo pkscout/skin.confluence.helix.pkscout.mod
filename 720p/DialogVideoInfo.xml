@@ -963,6 +963,18 @@
 						<description>Refresh</description>
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>184</label>
+						<onclick>ClearProperty(recommendedepisodes-data,10000)</onclick>
+						<onclick>ClearProperty(randomepisodes-data,10000)</onclick>
+						<onclick>ClearProperty(recentepisodes-data,10000)</onclick>
+						<onclick>ClearProperty(recommendedepisodes,10000)</onclick>
+						<onclick>ClearProperty(randomepisodes,10000)</onclick>
+						<onclick>ClearProperty(recentepisodes,10000)</onclick>
+						<onclick>ClearProperty(recommendedmovies-data,10000)</onclick>
+						<onclick>ClearProperty(randommovies-data,10000)</onclick>
+						<onclick>ClearProperty(recentmovies-data,10000)</onclick>
+						<onclick>ClearProperty(recommendedmovies,10000)</onclick>
+						<onclick>ClearProperty(randommovies,10000)</onclick>
+						<onclick>ClearProperty(recentmovies,10000)</onclick>
 					</control>
 					<control type="button" id="10">
 						<description>Get Thumb</description>
