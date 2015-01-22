@@ -93,7 +93,7 @@
 						</item>
 					</content>
     </include>
-	<include name="LDPRecentlyAddedAlbumns">
+	<include name="LDPRecentlyAddedAlbums">
 		<content target="music">plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]</content>
 	</include>
 	<include name="LDPRandomAlbums">
