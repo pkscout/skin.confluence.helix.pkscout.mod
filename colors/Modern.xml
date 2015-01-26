@@ -1,0 +1,11 @@
+<colors>
+	<color name="white">FFFFFFFF</color>
+	<color name="grey">FFb4b4b4</color>
+	<color name="grey2">FF999999</color>
+	<color name="grey3">FF505050</color>
+	<color name="black">FF000000</color>
+	<color name="blue">FFFFFFFF</color>
+	<color name="orange">FFFFFFFF</color>
+	<color name="selected">FFFFFFFF</color>
+	<color name="invalid">FFFF0000</color>
+</colors>
