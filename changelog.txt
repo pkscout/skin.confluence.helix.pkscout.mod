@@ -17,8 +17,11 @@ FEATURES
 - option to show/hide TV episode/season numbers on home screen (hidden by default)
 - option to show/hide music disc numbers on home screen/music visualization (hidden by default)
 
+v.2.0.9
+- updated Revamp theme to 4.0.2
+
 v.2.0.8
-- updated Revamped theme
+- updated Revamp theme
 - updated Modern theme
 
 v.2.0.7
